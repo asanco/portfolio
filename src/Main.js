@@ -8,28 +8,26 @@ class Main extends Component {
     return (
 
       <div className="container">
-      <div className="row">
+      <div className="row main">
 
-        <div className="col-lg-4 col-sm-4">
-
-          <h3 className="titleText">Details</h3>
+        <div className="col-lg-5 col-sm-7">
           <div className="">
-          <Details></Details>
+          <Details />
           </div>
 
         </div>
 
-        <div className="col-lg-8 col-sm-8 highlightContainer">
+        <div className="col-lg-7 col-sm-5 highlightContainer">
 
           <div className="row">
-          <div className="col-md-4 col-sm-4">
-          <Highlight></Highlight>
+          <div className="col-lg-4 col-md-6 col-sm-12">
+          <Highlight name="Roll'em" description="A fun dice game made in Unity for mobile devices" />
           </div>
-          <div className="col-md-4 col-sm-4">
-          <Highlight></Highlight>
+          <div className="col-lg-4 col-md-6 col-sm-12">
+          <Highlight name="MineSweeper Team" description="A web based multiplayer Minesweeper game made with Meteor"/>
           </div>
-          <div className="col-md-4 col-sm-4">
-          <Highlight></Highlight>
+          <div className="col-lg-4 col-md-6 col-sm-12">
+          <Highlight name = "Treasure Hunter" description="A web based treasure hunter application made with React"/>
           </div>
           </div>
 

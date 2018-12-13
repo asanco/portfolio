@@ -5,11 +5,10 @@ class Details extends Component {
   render() {
     return (
       <div className="details">
-
-      <h4>Andrés Sandoval</h4>
-      <h5>Computer Science and Engineering</h5>
+      <img src="/image/Digital57 BN.jpg" alt="project image" style={{width:"100%"}}></img>
+      <h5>Andrés Sandoval</h5>
+      <h6>Computer Science and Engineering</h6>
       <p>Welcome to my portfolio. Check out my projects. You can see more details by clicking each of the cards.</p>
-
       </div>
     );
   }
