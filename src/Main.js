@@ -23,6 +23,17 @@ constructor(props) {
 }
 
   render() {
+
+    const showingHighlight = this.state.showingHighlight;
+    let detailsPanel;
+
+    if (showingHighlight) {
+      detailsPanel = <Highlight image={this.state.imgUrls[1]} name={1} description={"Description " + 1} />
+;
+    } else {
+      detailsPanel = <Details />;
+    }
+
     return (
 
       <div className="container">
@@ -30,7 +41,7 @@ constructor(props) {
 
         <div className="col-lg-5 col-sm-7">
           <div className="">
-          <Details />
+          {detailsPanel}
           </div>
 
         </div>
