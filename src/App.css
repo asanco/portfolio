@@ -80,6 +80,11 @@
 	background-color: #555;
 }
 
+.highlightDetails{
+  height:85vh;
+  box-shadow: 0px 2px 4px 0 rgba(0,0,0,0.1), 0 4px 10px 0 rgba(0,0,0,0.19);
+}
+
 /* All of the app. */
 .App{
   background-color: #fafafa;

@@ -4,10 +4,26 @@ import './App.css';
 class HighlightDetails extends Component {
   render() {
     return (
-      <div className="highlight fade-in">
-      <img src={this.props.image} alt={this.props.alt} style={{width:"100%"}}></img>
-      <h5>{this.props.name}</h5>
-      <p>{this.props.description}</p>
+      <div className="highlightDetails fade-in">
+
+      <h4 style={{textAlign: "center", fontWeight: "bold", paddingTop: "10px", paddingBottom: "10px"}}>{this.props.name}</h4>
+      <p style={{textAlign: "justify", fontSize: "16px", paddingRight:"20px", paddingLeft:"20px"}}>{this.props.longDescription}</p>
+      <p style={{fontSize: "12px", paddingLeft:"20px"}}>Category: {this.props.category}</p>
+      <p style={{fontSize: "14px", paddingRight:"20px", paddingLeft:"20px"}}><a href={this.props.url}>Click here to go to the project page</a></p>
+
+      <img src={this.props.image} alt={this.props.alt} style={{width:"70%", paddingTop:"10px", margin:"auto", display:"block"}}></img>
+
+      <div className="row" style={{paddingTop: "5px"}}>
+      <div className="col-lg-6">
+      <img src={this.props.image} alt={this.props.alt} style={{width:"80%", margin:"auto", display:"block"}}></img>
+      </div>
+
+      <div className="col-lg-6">
+      <img src={this.props.image} alt={this.props.alt} style={{width:"80%", margin:"auto", display:"block"}}></img>
+      </div>
+
+      </div>
+
       </div>
     );
   }
