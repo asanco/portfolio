@@ -8,6 +8,7 @@ class Highlight extends Component {
       <img src={this.props.image} alt={this.props.alt} style={{width:"100%", paddingBottom: "5px"}}></img>
       <h6 style={{textAlign: "center"}}>{this.props.name}</h6>
       <p>{this.props.description}</p>
+      <p style={{fontSize: "11px", fontStyle:"italic"}}>{this.props.category}</p>
       </div>
     );
   }

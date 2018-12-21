@@ -1,5 +1,6 @@
 /* Add a black background color to the top navigation */
 .topnav {
+  position: relative;
   background-color: #181818;
   overflow: hidden;
 }
@@ -11,7 +12,7 @@
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
-  font-size: 17px;
+  font-size: 16px;
 }
 
 /* Change the color of links on hover */
@@ -24,6 +25,15 @@
 .topnav a.active {
   background-color: #89acb9;
   color: white;
+}
+
+
+.topnav-centered a{
+
+}
+
+.topnav-right {
+  float: right;
 }
 
 /* Background of page */

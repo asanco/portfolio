@@ -8,7 +8,6 @@ class App extends Component {
   render() {
     return (
       <div className="App">
-        {/*Tutorial https://blog.alexdevero.com/learn-react-practice-create-gallery/ */}
         {/*https://blog.prototypr.io/top-10-free-online-portfolio-websites-to-create-perfect-ux-ui-design-portfolios-4406b34f4ce*/}
         <Navbar />
         <Main/>
