@@ -13,7 +13,7 @@ class HighlightDetails extends Component {
 
       <p style={{textAlign: "justify", fontSize: "16px", paddingRight:"20px", paddingLeft:"20px"}}>{this.props.longDescription}</p>
       <p style={{fontSize: "12px", paddingLeft:"20px"}}>Category: {this.props.category}</p>
-      <p style={{fontSize: "14px", paddingRight:"20px", paddingLeft:"20px"}}><a href={this.props.url}>Click here to go to the project page</a></p>
+      <p style={{fontSize: "14px", paddingRight:"20px", paddingLeft:"20px"}}><a href={this.props.url} target="_blank">Click here to go to the project page</a></p>
 
       <img src={this.props.image} alt={this.props.alt} style={{width:"50%", paddingTop:"10px", margin:"auto", display:"block"}}></img>
 
