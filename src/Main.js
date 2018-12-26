@@ -13,7 +13,7 @@ constructor(props) {
    highlightIndex: -1,
    url: '',
    imgUrls : [
-  ["https://source.unsplash.com/3Z70SDuYs5g/800x600", "Roll'em", "Dice game for mobile devices made using Unity", "Roll'em is a singleplayer dice game made with Unity. Rotate the die or dice to reach the target score before the time runs out. Still in alpha stage.", "Games", "https://google.com"],
+  ["/image/dice1.jpg", "Roll'em", "Dice game for mobile devices made using Unity", "Roll'em is a singleplayer dice game made with Unity. Rotate the die or dice to reach the target score before the time runs out. Still in alpha stage.", "Games", "https://google.com"],
   ["https://source.unsplash.com/01vFmYAOqQ0/800x600", "Minesweeper Team", "A multiplayer version of Minesweeper mande with Meteor", "Minesweeper Team is a web based multiplayer Minesweeper game made with the Meteor framework. Scores and finished games are stored in a database as well as a leaderboard with the best scores.", "Web Applications/Games", "https://github.com/jdguzmans/minesweeper-team", "/image/MinesweeperTeamFoto2.png"],
   ["https://source.unsplash.com/2Bjq3A7rGn4/800x600", "Treasure Hunter", "A scavenger hunt application that uses Google Map's API", "Treasure Hunter is a web based treasure hunter game made with React. It makes use of Google Maps' API to find specific locations that are hinted at while looking for the treasure. You can also make your own Hunt in the creation menu.", "Web Applications/Games", "https://github.com/asandovaluniandes/treasure-hunter","/image/TreasureHunterFoto2.png"],
   ["https://source.unsplash.com/t20pc32VbrU/800x600", "Human Robot Interaction", "Application that lets a user control a robot with a Kinect", "This university project showcases the Kinect's ability to recognize customized gestures to move a P3-DX robot in a simulation environment and in real space.", "Robotics", "https://github.com","/image/RobotHRIFoto2.png"],
@@ -43,7 +43,6 @@ constructor(props) {
 
     if (showingHighlight === -1) {
       detailsPanel = <Details />;
-;
     } else {
       detailsPanel = <HighlightDetails buttonClick={this.showDetails.bind(this)} image={this.state.imgUrls[showingHighlight][0]} name={this.state.imgUrls[showingHighlight][1]} longDescription={this.state.imgUrls[showingHighlight][3]} category={this.state.imgUrls[showingHighlight][4]} url={this.state.imgUrls[showingHighlight][5]} secondImg={this.state.imgUrls[showingHighlight][6]} thirdImg={this.state.imgUrls[showingHighlight][7]}/>
     }
@@ -60,7 +59,7 @@ constructor(props) {
 
         </div>
 
-        <div className="col-lg-7 col-sm-5 highlightContainer">
+        <div className="col-lg-7 col-sm-5 highlightContainer fade-in">
 
         <div className='row'>
         {

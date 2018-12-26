@@ -2,10 +2,38 @@ import React, { Component } from 'react';
 import './App.css';
 import Main from './Main.js';
 import {Navbar, Nav, NavItem, NavDropdown, MenuItem} from 'react-bootstrap';
+import Contact from './Contact.js';
+import About from './About.js';
 
 class App extends Component {
 
+  constructor(props) {
+    super(props);
+
+    this.state = {
+     highlightIndex: 1,
+   }
+ }
+
+ showView(index, e) {
+   this.setState({
+    highlightIndex: index
+   })
+ };
+
   render() {
+
+    const showingPanel = this.state.highlightIndex;
+    let viewPanel;
+
+    if (showingPanel === 1) {
+      viewPanel = <Main />;
+    } else if (showingPanel === 2){
+      viewPanel = <About />;
+    } else {
+      viewPanel = <Contact />;
+    }
+
     return (
       <div className="App">
         {/*https://react-bootstrap.github.io/components/navbar/*/}
@@ -13,13 +41,13 @@ class App extends Component {
         <Navbar inverse collapseOnSelect>
           <Navbar.Collapse>
             <Nav>
-              <NavItem eventKey={1} href="#">
+              <NavItem eventKey={1} href="#" onClick={(e) => this.showView(1, e)}>
                 Projects
               </NavItem>
-              <NavItem eventKey={2} href="#">
+              <NavItem eventKey={2} href="#" onClick={(e) => this.showView(2, e)}>
                 About
               </NavItem>
-              <NavItem eventKey={3} href="#">
+              <NavItem eventKey={3} href="#" onClick={(e) => this.showView(3, e)}>
                 Contact
               </NavItem>
             </Nav>
@@ -38,7 +66,7 @@ class App extends Component {
         </Navbar>
 
 
-        <Main/>
+        {viewPanel}
       </div>
     );
   }
