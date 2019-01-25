@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import './App.css';
 import Main from './Main.js';
-import {Navbar, Nav, NavItem, NavDropdown, MenuItem} from 'react-bootstrap';
+import {Navbar, Nav, NavItem} from 'react-bootstrap';
 import Contact from './Contact.js';
 import About from './About.js';
 
@@ -52,20 +52,18 @@ class App extends Component {
               </NavItem>
             </Nav>
             <Nav pullRight>
-              <NavItem eventKey={1} href="https://github.com/asandovaluniandes" target="_blank">
-                <a className="fab fa-github" ></a>
+              <NavItem componentClass='span' eventKey={1} href="https://github.com/asandovaluniandes" target="_blank" rel="noopener noreferrer">
+                <a className="fab fa-github" href="https://github.com/asandovaluniandes" target="_blank" rel="noopener noreferrer"><span style={{display: "none"}}>github page link</span></a>
               </NavItem>
-              <NavItem eventKey={2} href="http://linkedin.com/in/asandoval110" target="_blank">
-                <a className="fab fa-linkedin-in" ></a>
+              <NavItem componentClass='span' eventKey={2} href="http://linkedin.com/in/asandoval110" target="_blank">
+                <a className="fab fa-linkedin-in" href="http://linkedin.com/in/asandoval110" target="_blank" rel="noopener noreferrer"><span style={{display: "none"}}>linkedin page link</span></a>
               </NavItem>
-              <NavItem eventKey={3} href="#">
+              <NavItem componentClass='span' eventKey={3} href="#">
                 <a href="#contact">CV</a>
               </NavItem>
             </Nav>
           </Navbar.Collapse>
         </Navbar>
-
-
         {viewPanel}
       </div>
     );
