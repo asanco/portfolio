@@ -49,6 +49,7 @@ constructor(props) {
 
   // Function for showing more details of each project
   showHighlight(index, e) {
+    window.scroll({ top: 0, left: 0, behavior: 'smooth' });
     this.setState({
      highlightIndex: index
     })

@@ -61,6 +61,7 @@
 
 /* All of the app. */
 .App{
+  height: 100vh;
   background-color: #fafafa;
   font-family: 'Roboto', sans-serif;
   font-size: 14px;
