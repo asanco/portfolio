@@ -34,6 +34,7 @@ constructor(props) {
         projectRow.push(jsonProjects[i].gsx$longdesc.$t);
         projectRow.push(jsonProjects[i].gsx$category.$t);
         projectRow.push(jsonProjects[i].gsx$link.$t);
+        projectRow.push(jsonProjects[i].gsx$secondimg.$t);
         projects.push(projectRow);
       }
 
@@ -70,7 +71,7 @@ constructor(props) {
     if (showingHighlight === -1) {
       detailsPanel = <Details />;
     } else {
-      detailsPanel = <HighlightDetails buttonClick={this.showDetails.bind(this)} image={this.state.imgUrls[showingHighlight][0]} name={this.state.imgUrls[showingHighlight][1]} longDescription={this.state.imgUrls[showingHighlight][3]} category={this.state.imgUrls[showingHighlight][4]} url={this.state.imgUrls[showingHighlight][5]} secondImg={this.state.imgUrls[showingHighlight][6]} thirdImg={this.state.imgUrls[showingHighlight][7]}/>
+      detailsPanel = <HighlightDetails buttonClick={this.showDetails.bind(this)} image={this.state.imgUrls[showingHighlight][0]} name={this.state.imgUrls[showingHighlight][1]} longDescription={this.state.imgUrls[showingHighlight][3]} category={this.state.imgUrls[showingHighlight][4]} url={this.state.imgUrls[showingHighlight][5]} secondImg={this.state.imgUrls[showingHighlight][6]}/>
     }
 
     return (

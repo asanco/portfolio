@@ -15,18 +15,7 @@ class HighlightDetails extends Component {
       <p style={{fontSize: "12px", paddingLeft:"20px"}}>Category: {this.props.category}</p>
       <p style={{fontSize: "14px", paddingRight:"20px", paddingLeft:"20px"}}><a href={this.props.url} target="_blank" rel="noopener noreferrer">Click here to go to the project page</a></p>
 
-      <img src={this.props.image} alt={this.props.alt} style={{width:"50%", paddingTop:"10px", margin:"auto", display:"block"}}></img>
-
-      <div className="row" style={{paddingTop: "5px"}}>
-      <div className="col-lg-6">
-      <img src={this.props.secondImg} alt={this.props.alt} style={{width:"80%", margin:"auto", display:"block"}}></img>
-      </div>
-
-      <div className="col-lg-6">
-      <img src={this.props.thirdImg} alt={this.props.alt} style={{width:"80%", margin:"auto", display:"block"}}></img>
-      </div>
-
-      </div>
+      <img src={this.props.secondImg} alt={"Project screenshot"} style={{width:"100%", paddingTop:"5px", margin:"auto", display:"block"}}></img>
 
       </div>
     );
