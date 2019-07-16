@@ -53,13 +53,10 @@ class App extends Component {
             </Nav>
             <Nav pullRight>
               <NavItem eventKey={1} href="https://github.com/asandovaluniandes" target="_blank" rel="noopener noreferrer">
-                <a className="fab fa-github" href="https://github.com/asandovaluniandes" target="_blank" rel="noopener noreferrer"><span style={{display: "none"}}>github page link</span></a>
+                <a className="fab fa-github" href="https://github.com/asandovaluniandes" target="_blank" rel="noopener noreferrer"><span style={{display: "none"}}>Github page link</span></a>
               </NavItem>
-              <NavItem eventKey={2} href="http://linkedin.com/in/asandoval110" target="_blank">
-                <a className="fab fa-linkedin-in" href="http://linkedin.com/in/asandoval110" target="_blank" rel="noopener noreferrer"><span style={{display: "none"}}>linkedin page link</span></a>
-              </NavItem>
-              <NavItem eventKey={3} href="#">
-                <a href="#contact">CV</a>
+              <NavItem eventKey={2} href="https://drive.google.com/file/d/1BuhL_IcqErZomx9rz55Sl9rMFXIzyxql/view?usp=sharing">
+                <a className="far fa-file-pdf" href="https://drive.google.com/file/d/1BuhL_IcqErZomx9rz55Sl9rMFXIzyxql/view?usp=sharing" target="_blank" rel="noopener noreferrer"><span style={{display: "none"}}>Resumé</span></a>
               </NavItem>
             </Nav>
           </Navbar.Collapse>
