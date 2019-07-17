@@ -36,6 +36,7 @@ class App extends Component {
 
     return (
       <div className="App">
+        {/*to update ghpages use npm run deploy*/}
         {/*https://react-bootstrap.github.io/components/navbar/*/}
         {/*https://blog.prototypr.io/top-10-free-online-portfolio-websites-to-create-perfect-ux-ui-design-portfolios-4406b34f4ce*/}
         <Navbar inverse collapseOnSelect>
