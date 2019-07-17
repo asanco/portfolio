@@ -2,7 +2,7 @@
   "name": "portfolio",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://asandovaluniandes.github.io/portfolio",
+  "homepage": "https://asandovaluniandes.github.io/portfolio/",
   "dependencies": {
     "gh-pages": "^2.0.1",
     "react": "^16.6.3",
