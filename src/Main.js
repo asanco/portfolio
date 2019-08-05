@@ -63,6 +63,7 @@ constructor(props) {
     })
   };
 
+
   render() {
 
     const showingHighlight = this.state.highlightIndex;

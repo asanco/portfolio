@@ -16,8 +16,8 @@ class About extends Component {
         <br/>
         <h5> If you want to check out my resumé, click <a href="https://drive.google.com/file/d/1BuhL_IcqErZomx9rz55Sl9rMFXIzyxql/view?usp=sharing" target="_blank" rel="noopener noreferrer">here</a>.</h5>
       </div>
-      <div className = "col-md-6">
-        <img src={"https://docs.google.com/uc?id=10VX_padLZUIj8JfyUIKa9JG1z8VmYAPG"} alt="Foto of me" style={{width:"60%", textAlign: "center"}}></img>
+      <div className = "col-md-6 centerImage">
+        <img src={"https://docs.google.com/uc?id=10VX_padLZUIj8JfyUIKa9JG1z8VmYAPG"} alt="Foto of me" style={{width:"50%", textAlign: "center"}}></img>
       </div>
       </div>
     );
